@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GetDataService {
   LocalURL="http://localhost:3000/"
-  HerokuURL="https://chiragmean.herokuapp.com/"
+  HerokuURL="https://dipakdb1.herokuapp.com/"
   
 
   constructor(private http:HttpClient) { }
