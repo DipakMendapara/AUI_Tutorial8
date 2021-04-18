@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class RegisterService {
 
   LocalURL="http://localhost:3000/"
-  HerokuURL="https://chiragmean.herokuapp.com/"
+  HerokuURL="https://dipakdb1.herokuapp.com/"
  
   url=this.HerokuURL+"insemp"
   loginUrl=this.HerokuURL+"login"
