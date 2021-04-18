@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <a class="navbar-brand" routerLink=""><b>18SOECE11035</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink=""><b>Home</b><span class="sr-only">(current)</span></a>
+            </li>            
+        </ul>
+
+        <ul class="navbar-nav" *ngIf="!this._auth.isLoggedIn()">
+            <li class="nav-item">
+                <a class="btn btn-success nav-link" style="color: white;text-align: center;" routerLink="/login"><b>Login</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-warning nav-link" style="color: white;text-align: center;" routerLink="/register"><b>Register</b></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" *ngIf="this._auth.isLoggedIn()">
+            <li class="nav-item">
+                <a class="btn btn-success nav-link" style="color: white;text-align: center;" routerLink="/employees"><b>Employees</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-danger nav-link" style="color: white;text-align: center;"  (click)="logout()"><b>Logout</b></a>
+            </li>
+        </ul>
+        
+    </div>
+</nav>

@@ -1,0 +1,13 @@
+.register{
+    width: 100px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 24px;
+}
+.register:hover{
+    background-color: #008CBA;
+    color: white;
+}
